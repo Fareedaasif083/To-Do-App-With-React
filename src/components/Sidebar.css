@@ -1,0 +1,120 @@
+/* Sidebar container */
+.sidebar {
+  width: 220px;
+  background-color: var(--bg);
+  border-right: 1px solid var(--hover);
+  padding: 1rem;
+  height: 100vh;          /* full height */
+  position: fixed;   
+  margin-top: 74px;     
+  top: 0; 
+  left: -240px; 
+  transition: left 0.3s ease; /* smooth slide */
+  z-index: 1000;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+#add-task-btn{
+    display: block;
+    background-color: var(--text);
+    color: var(--bg);
+    margin: 0.5rem;
+    margin-left: 1.5rem;
+    padding:0.5rem;
+    border-radius: 10px;
+    border: none;
+}
+#add-task-btn:hover{
+    background-color: var(--hover-2);
+}
+.manu ul {
+  list-style: none;
+  padding: 0;
+  margin-left: 0.8rem;
+  margin-top: 1.5rem;
+}
+.manu li { 
+  margin-bottom: 0.5rem;
+}
+.manu a {
+  text-decoration: none;
+  color: var(--text-2);
+  font-size: 1rem;
+  display: block;
+  padding: 0.5rem;
+  border-radius: 8px;
+  transition: background 0.3s transform 0.18s ease-in;
+}
+.manu a:hover {
+  background: var(--hover);
+  transform: translateX(6px);
+}
+
+/* Task counter badge */
+.count {
+  background: #4cafef;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 80px;
+  margin-top:3px;
+  float: right; /* push to right */
+  margin-left: 8px;
+}
+
+/* Filter section */
+.filter-section {
+  margin-top: 10px;
+  padding: 10px;
+
+}
+
+.filter-section h3 {
+  font-size: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 8px;
+  color:var(--text-2) ;
+}
+
+.filter-section select {
+  width: 90%;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid var(--text-2);
+  margin-left: 0.9rem;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.filter-section select:focus {
+  border-color: var(--text);
+}
+
+/* Trash bin section */
+.trash-bin  {
+  padding: 10px 0;
+  margin-top: 100px;
+  margin-left: 0.8rem;
+}
+
+.trash-bin a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  color: var(--text-2);
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.trash-bin a:hover {
+  background: var(--hover);
+  transform: translateX(6px);
+}
