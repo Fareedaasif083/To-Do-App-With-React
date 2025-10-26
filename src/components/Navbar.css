@@ -1,0 +1,104 @@
+:root{
+    --bg: #fff; /* background-color  */
+    --text: #2271c0;
+    --text-2: #3a3a3a;
+    --hover: #897878;
+    --hover-2:rgb(53, 95, 143);
+}
+
+body.light{
+  --bg: #fff; /* background-color  */
+    --text: #2271c0;
+    --text-2: #3a3a3a;
+    --hover: #897878;
+    --hover-2:rgb(53, 95, 143);
+}
+
+body.dark {
+    --bg: #1e1e1e;        /* dark background */
+    --text: #4cafef;      
+    --text-2: #e0e0e0;    /* general text */
+    --hover: #555555;     
+    --hover-2: #3a7bd5;   
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 1rem;
+  color: var(--text); /* dark blue-gray */
+  background-color:var(--bg);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Left Section */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+#menu-toggle {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text);
+  transition: transform 0.2s ease;
+}
+
+#menu-toggle:hover {
+  transform: scale(1.1);
+}
+
+#app-title {
+  margin-top: 3px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* Middle Section (Search Bar) */
+.header-middle {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+#search-bar {
+  width: 60%;
+  max-width: 400px;
+padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  margin-top: 4px;
+  font-size: 0.9rem;
+}
+
+#search-icon {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Right Section (Theme Toggle) */
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+#theme-toggle {
+  font-size: 1.3rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  transition: transform 0.3s ease;
+}
+
+#theme-toggle:hover {
+  transform: translateX(5px);
+}

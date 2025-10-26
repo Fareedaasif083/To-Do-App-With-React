@@ -1,4 +1,5 @@
 import { useState } from 'react'
+components/Sidebar
 import Sidebar from './components/Sidebar.jsx'
 import './App.css'
 
@@ -7,7 +8,9 @@ function App() {
 
   return (
     <>
+ components/Sidebar
     <Sidebar/>
+
     </>
   )
 }
