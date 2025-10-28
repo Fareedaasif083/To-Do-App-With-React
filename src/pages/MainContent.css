@@ -1,0 +1,51 @@
+/* Main content area */
+.main-content {
+  margin-left: 220px; /* Sidebar width */
+  padding: 20px;
+  background: var(--bg);
+}
+
+.main-content.expanded {
+  margin-left: 0; /* take full width */
+  transition: margin 0.3s ease;
+}
+
+/* Smooth transition for main content */
+
+.main-content {
+  transition: all 0.3s ease;
+}
+
+/* Section header */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.main-header h2 {
+  font-size: 1.5rem;
+  color: var(--text-2);
+}
+
+.main-header button {
+  background: var(--text);
+  color: var(--bg);
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.main-header button:hover {
+  background: var(--hover-2);
+}
+
+/* No task text */
+.no-task {
+  text-align: center;
+  color: var(--text-2);
+  padding: 20px;
+  font-style: italic;
+}
