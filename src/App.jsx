@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Navbar from './components/Navbar.jsx'
+import MainContent from './pages/MainContent'
 import './App.css'
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
   return (
     <>
     <Navbar/>
+    <MainContent/>
     </>
   )
 }
