@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import './Responsive.css'
 import "./Navbar.css";
 
-const Navbar = () => {
+const Navbar = ({OnSearch}) => {
   const [theme, setTheme] = useState(
     () => localStorage.getItem("theme") || "light"
   );
