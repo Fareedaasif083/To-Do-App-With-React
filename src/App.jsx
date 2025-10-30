@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import {createBroserRouter, RouterProvider} from 'react-router-dom';
+import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 import Navbar from './components/Navbar';
 import MainContent from './pages/MainContent';
 import AddTask from './pages/AddTask';
@@ -8,7 +8,7 @@ import AddTask from './pages/AddTask';
 import './App.css'
 import "./Responsive.css"
 
-const router=createBroserRouter([
+const router=createBrowserRouter([
   {
     path:"/",
     element:(
