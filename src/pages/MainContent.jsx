@@ -135,6 +135,7 @@ const MainContent = () => {
 
   const tasksFilters = getFilteredTasks();
   return (
+    <>
     <div>
       <Sidebar onFilterChange={filterHandler}/>
       <main id="main-content" className="main-content">
@@ -215,6 +216,7 @@ const MainContent = () => {
         )}
       </main>
     </div>
+    </>
   );
 };
 
