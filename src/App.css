@@ -1,0 +1,23 @@
+:root{
+    --bg: #fff; /* background-color  */
+    --text: #2271c0;
+    --text-2: #3a3a3a;
+    --hover: #897878;
+    --hover-2:rgb(53, 95, 143);
+}
+
+body.light{
+  --bg: #fff; /* background-color  */
+    --text: #2271c0;
+    --text-2: #3a3a3a;
+    --hover: #897878;
+    --hover-2:rgb(53, 95, 143);
+}
+
+body.dark {
+    --bg: #1e1e1e;        /* dark background */
+    --text: #4cafef;      /* main text */
+    --text-2: #e0e0e0;    /* general text */
+    --hover: #555555;     /* hover for menu/links */
+    --hover-2: #3a7bd5;   /* hover for buttons */
+}
