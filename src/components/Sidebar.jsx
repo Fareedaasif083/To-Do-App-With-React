@@ -6,6 +6,7 @@ import "./Sidebar.css";
 const Sidebar = ({ onFilterChange }) => {
   const navigate = useNavigate();
   const [tasks, setTasks] = useState([]);
+  
   const [filter, setFilter] = useState("all");
 
   useEffect(() => {
