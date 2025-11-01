@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import "./MainContent.css";
 import Sidebar from "../components/Sidebar";
 const MainContent = () => {
-  <div>hi</div>
   const navigate = useNavigate();
   const [tasks, setTasks] = useState([]);
   const [filter, setFilter] = useState("all");
