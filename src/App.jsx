@@ -1,17 +1,16 @@
 
-import { useState } from 'react';
-import {createBrowserRouter, RouterProvider} from 'react-router-dom';
-import Navbar from './components/Navbar';
-import MainContent from './pages/MainContent';
-import AddTask from './pages/AddTask';
-
+import React from 'react';
+import {createBrowserRouter , RouterProvider} from 'react-router-dom';
+import Navbar from './components/Navbar.jsx';
+import MainContent from './pages/MainContent.jsx';
+import AddTask from './pages/AddTask.jsx';
 import './App.css'
 import "./Responsive.css"
 
 const router=createBrowserRouter([
   {
     path:"/",
-    element:(
+    element:( 
       <>
       <Navbar/>
       <MainContent/>
@@ -35,3 +34,4 @@ function App() {
 }
 
 export default App
+

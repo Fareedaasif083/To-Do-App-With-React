@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./MainContent.css";
 import Sidebar from "../components/Sidebar";
 const MainContent = () => {
+  <div>hi</div>
   const navigate = useNavigate();
   const [tasks, setTasks] = useState([]);
   const [filter, setFilter] = useState("all");
@@ -134,6 +135,7 @@ const MainContent = () => {
 
   const tasksFilters = getFilteredTasks();
   return (
+    <>
     <div>
       <Sidebar onFilterChange={filterHandler}/>
       <main id="main-content" className="main-content">
@@ -214,6 +216,7 @@ const MainContent = () => {
         )}
       </main>
     </div>
+    </>
   );
 };
 
