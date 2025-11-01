@@ -1,0 +1,111 @@
+/* Main content area */
+.main-content {
+  margin-left: 220px; 
+  padding: 20px;
+  background: var(--bg);
+}
+
+.main-content.expanded {
+  margin-left: 0; /* take full width */
+  transition: margin 0.3s ease;
+}
+
+.main-content {
+  transition: all 0.3s ease;
+}
+
+/* Section header */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.main-header h2 {
+  font-size: 1.5rem;
+  color: var(--text-2);
+}
+
+.main-header button {
+  background: var(--text);
+  color: var(--bg);
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.main-header button:hover {
+  background: var(--hover-2);
+}
+
+/* No task text */
+.no-task {
+  text-align: center;
+  color: var(--text-2);
+  padding: 20px;
+  font-style: italic;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: var(--text, #fff);
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.task-info {
+  flex: 1;
+}
+
+.task-title.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.task-filters button {
+  margin-left: 6px;
+  cursor: pointer;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: var(--text-2);
+}
+.star-btn {
+  background-color: var(--hover);
+  color: white;
+}
+
+.complete-btn {
+  background-color: var(--hover);
+  color: white;
+}
+
+.edit-btn {
+  background-color: var(--hover);
+  color: white;
+}
+
+.delete-btn {
+  background-color: var(--hover);
+  color: white;
+}
+
+.restore-btn {
+  background-color: var(--hover);
+  color: white;
+}
+
+.permanent-delete-btn {
+  background-color: var(--hover);
+  color: white;
+}
