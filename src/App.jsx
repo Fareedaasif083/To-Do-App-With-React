@@ -1,13 +1,13 @@
 
 import React from 'react';
-import {createBrowserRouter , RouterProvider} from 'react-router-dom';
+import {createHashRouter , RouterProvider} from 'react-router-dom';
 import Navbar from './components/Navbar.jsx';
 import MainContent from './pages/MainContent.jsx';
 import AddTask from './pages/AddTask.jsx';
 import './App.css'
 import "./Responsive.css"
 
-const router=createBrowserRouter([
+const router=createHashRouter([
   {
     path:"/",
     element:( 
